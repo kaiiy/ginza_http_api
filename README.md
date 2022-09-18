@@ -1,5 +1,15 @@
 # GiNZA HTTP API
 
+# Requirement
+
+- [Poetry](https://github.com/python-poetry/poetry)
+
+# Setup
+
+```sh
+$ poetry install
+```
+
 # Usage
 
 ```sh
@@ -10,37 +20,14 @@ $ curl -X POST -H "Content-Type: application/json" \
 
 ```sh
 # launch a develop server
-$ ./bin/run_develop.sh
+$ poetry run task run_dev
 
 # launch a product server
-$ ./bin/run_product.sh
+$ poetry run task run_prod
 
 # kill a product server
-$ ./bin/kill_product.sh
+$ poetry run task kill_prod
 
 # test
-$ pytest
-```
-
-# Setup
-
-```sh
-$ python3 -m venv venv
-$ . ./venv/bin/activate.fish
-$ pip3 install -r requirements.txt
-```
-
-# Dependencies
-
-- [GiNZA](https://github.com/megagonlabs/ginza)
-- [FastAPI](https://github.com/tiangolo/fastapi)
-- [Uvicorn](https://github.com/encode/uvicorn)
-- [Gunicorn](https://github.com/benoitc/gunicorn)
-
-```sh
-$ pip3 install \
-    ginza ja_ginza_electra \
-    fastapi \
-    uvicorn[standard] \
-    gunicorn
+$ poetry run task test
 ```
