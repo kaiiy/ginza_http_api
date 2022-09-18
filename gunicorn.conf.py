@@ -12,7 +12,6 @@ daemon = True
 
 errorlog = "./log/error.txt"
 
-# プロセスの名前
 proc_name = "ginza_api"
 
 accesslog = "./log/access.txt"
