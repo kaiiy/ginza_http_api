@@ -8,9 +8,9 @@ readme = "README.md"
 
 [tool.taskipy.tasks]
 # launch a develop server
-run_dev = "uvicorn main:app --reload --port 8080"
+run_dev = "./.venv/bin/uvicorn main:app --reload --port 8080"
 # launch a product server
-run_prod = "gunicorn -c gunicorn.conf.py main:app"
+run_prod = "./.venv/bin/gunicorn -c gunicorn.conf.py main:app"
 # kill a product server
 kill_prod = "kill `cat prod.pid`"
 # test 
