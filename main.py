@@ -2,6 +2,7 @@ import spacy
 from fastapi import FastAPI
 from pydantic import BaseModel
 import warnings
+import json
 warnings.filterwarnings('ignore')
 
 nlp = spacy.load('ja_ginza_electra')
@@ -12,8 +13,9 @@ class Text(BaseModel):
     text: str
 
 @app.get("/")
-def hello():
-    return {"hello": "world!"}
+def hello(text: str = "おはよう"):
+    doc = nlp(text)
+    return doc.to_json()
 
 @app.post("/")
 def parse(text: Text):
