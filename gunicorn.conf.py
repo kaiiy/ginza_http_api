@@ -10,7 +10,7 @@ pidfile = "prod.pid"
 
 daemon = True
 
-proc_name = "ginza_api"
+proc_name = "ginza_http_api"
 
 accesslog = "./log/access.txt"
 errorlog = "./log/error.txt"

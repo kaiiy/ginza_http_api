@@ -13,7 +13,7 @@ ja-ginza-electra = "^5.1.2"
 fastapi = "^0.85.0"
 uvicorn = {extras = ["standard"], version = "^0.18.3"}
 gunicorn = "^20.1.0"
-pymagnitude = "^0.1.143"
+python-dotenv = "^0.21.0"
 numpy = "^1.23.3"
 
 [tool.poetry.group.dev.dependencies]

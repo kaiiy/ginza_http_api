@@ -8,13 +8,13 @@ dotenv: ['.env']
 tasks:
   dev:
     cmds:
-      - ./.venv/bin/uvicorn main:app --reload --port "$PORT"
-  "prod:run":
+      - poetry run uvicorn main:app --reload --port "$PORT"
+  prod:run:
     cmds:
-      - ./.venv/bin/gunicorn -c gunicorn.conf.py main:app
-  "prod:kill":
+      - poetry run gunicorn -c gunicorn.conf.py main:app
+  prod:kill:
     cmds:
       - kill `cat prod.pid`
   test: 
     cmds:
-      - ./.venv/bin/pytest
+      - poetry run pytest

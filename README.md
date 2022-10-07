@@ -1,8 +1,9 @@
 # GiNZA HTTP API
 
-# Requirement
+# Requirements
 
-- [Poetry](https://github.com/python-poetry/poetry)
+- poetry
+- task
 
 # Setup
 
