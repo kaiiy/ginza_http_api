@@ -1,3 +1,13 @@
-venv/
-log/
+# python 
+.venv/
 __pycache__/
+
+# pytest 
+.pytest_cache/
+
+# pymagnitude 
+.magnitude/
+
+# this repo
+log/
+
