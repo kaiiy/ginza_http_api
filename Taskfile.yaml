@@ -6,6 +6,9 @@ silent: true
 dotenv: ['.env']
 
 tasks:
+  setup:
+    cmds:
+      - poetry install
   dev:
     cmds:
       - poetry run uvicorn main:app --reload --port "$PORT"
