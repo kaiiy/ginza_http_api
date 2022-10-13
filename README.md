@@ -8,7 +8,7 @@
 # Setup
 
 ```sh
-$ poetry install
+$ task setup
 ```
 
 # Usage
