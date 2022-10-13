@@ -1,17 +1,17 @@
 # GiNZA HTTP API
 
-# Requirements
+## Requirements
 
 - poetry
 - task
 
-# Setup
+## Setup
 
 ```sh
 $ task setup
 ```
 
-# Usage
+## Usage
 
 ```sh
 $ task dev
@@ -19,7 +19,7 @@ $ curl -X POST -H "Content-Type: application/json" \
     -d '{"text": "銀座でランチをご一緒しましょう。"}' http://localhost:8080/
 ```
 
-# Customization
+## Customization
 
 ```sh
 #  change a port
