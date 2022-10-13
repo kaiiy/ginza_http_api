@@ -23,5 +23,5 @@ $ curl -X POST -H "Content-Type: application/json" \
 
 ```sh
 #  change a port
-$ echo "PORT=45000" > .env
+$ echo "GINZA_PORT=45000" > .env
 ```
