@@ -11,7 +11,7 @@ tasks:
       - poetry install
   dev:
     cmds:
-      - poetry run uvicorn main:app --reload --port "$PORT"
+      - ./bin/dev.py
   prod:run:
     cmds:
       - poetry run gunicorn -c gunicorn.conf.py main:app
@@ -21,3 +21,4 @@ tasks:
   test: 
     cmds:
       - poetry run pytest
+      
